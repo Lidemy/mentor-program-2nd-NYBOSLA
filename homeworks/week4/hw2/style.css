@@ -1,0 +1,112 @@
+<style>
+			html body{
+				margin: 0;
+			}
+			body{
+				background-color: #d2a57f3d;
+			}
+			.bg{
+				padding: 0 20px;
+			}
+			.cover_pic{
+				width: 100%;
+				height: 200px;
+				margin:0;
+				background-color: #b7947d;
+			}
+			.container{
+				position: relative;
+				top: -80px;
+				max-width: 520px;
+				margin: 0 auto;
+				padding: 0 32px 36px;
+				border-top: 8px solid red;
+				background-color: #FFFFFF;
+				box-shadow:1px 1px 2px 1px #AAAAAA;
+			}
+			.header{
+				padding: 0 10px;
+			}
+			.title{
+				font-size: 36px;
+				margin: 36px 0;
+			}
+			.des{
+				font-size: 12px;
+				margin: 10px 0;
+			}
+			.des:last-child{
+				color: #999999;
+			}
+			.req{
+				color: red;
+			}
+			.question{
+				margin: 36px 0;
+				padding: 20px 10px;
+			}
+			.q3{
+				display: flex;
+				display: -webkit-flex;
+				align-items: center;
+				-webkit-align-items: center;
+				margin: 20px 0;
+			}
+			.q3-left{
+				width: 8%;
+				margin: 5px;
+			}
+			.q3-right{
+				display: inline-block;
+				width: 88%;
+			}
+			.subtitle{
+				font-size: 24px;
+				margin: 10px 0;
+			}
+			input{
+				margin: 10px 0 10px 0;
+			}
+			input[type=text]{
+				width: 300px;
+				height: 36px;
+				border: none;
+				border-bottom: 1px solid #AAAAAA;
+				box-sizing: border-box;
+				transition: all 0.3s ease-in-out;
+			}
+			input[type=text]:focus{
+				border-bottom: 2px solid #303030;
+				outline: none;
+			}
+			.hidden{
+				visibility: hidden;
+			}
+			#submit{
+				background-color: #00aed2;
+				border: none;
+				border-radius: 4px;
+				color: white;
+				padding: 12px 36px;
+				font-size: 16px;
+			}
+			.footer {
+				width:400px;
+				margin: 0 auto 36px;
+				text-align: center;
+			}
+			@media screen and (max-width: 600px){
+				.title{
+					font-size: 24px;
+				}
+				.subtitle{
+					font-size: 18px;
+				}
+				input[type=text]{
+					width: 100%;
+				}
+				#submit{
+					width: 100%;
+				}
+			}
+		</style>

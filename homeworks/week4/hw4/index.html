@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>化繁為簡</title>
+</head>
+<body>
+
+	<div class="test">
+		<p>1233</p>
+		<p>4567</p>
+	</div>
+	
+
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded',function(){
+			var test = document.querySelector('.test > p')
+			test.appendChild(document.createElement('span'))
+			// 第一個變成red
+			test.style.color ='red' 
+
+
+
+			// ex.
+			// var test = document.querySelectorAll('.test > p')
+			// test[0].style.color ='red'
+			// var span = document.createElement('span')
+			// span.innerText = 'span出現了'
+			// test.appendChild(span)
+		})
+	</script>
+	
+</body>
+</html>
