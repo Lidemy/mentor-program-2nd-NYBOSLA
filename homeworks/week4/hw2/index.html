@@ -2,87 +2,75 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>程式導師實驗計畫第二期報名名單</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="cover_pic"></div>
-
-		<div class="bg">
-			<div class="container">
-
-				<div class="header">
-					<div class="title">從零到一：程式導師實驗計畫報名表單</div>
-					<div class="des">
-						詳情請參考：
-						<a href="https://medium.com/@hulitw/mentor-program-b5f96ae1eed1">
-							https://medium.com/@hulitw/mentor-program-b5f96ae1eed1
-						</a><br>
-						記得填完表單之後還要寫信報名才算成功，兩者缺一不可！
-					</div>
-					<div class="req des">*必填</div>
-				</div>
-
-				<form>
-					<!-- 第一題 -->
-					<div class="question">
-						<div class="subtitle">電子郵件地址<span class="req">*</span></div>
-						<input class="answer" type="text" placeholder="你的電子郵件" />
-						<div class="hidden req">這是必填問題！</div>
-					</div>
-
-					<!-- 第二題 -->
-					<div class="question">
-						<div class="subtitle">暱稱<span class="req">*</span></div>
-						<div class="des">該怎麼稱呼你</div>
-						<input class="answer" type="text" placeholder="您的回答" />
-						<div class="hidden req">這是必填問題！</div>
-					</div>
-
-					<!-- 第三題 -->
-					<div  class="question">
-						<div class="subtitle">報名類型<span class="req">*</span></div>
-
-						<div class="q3">
-							<input class="q3-left answer" type="radio" name="chozenType" value="工程師培養班" />
-							<div class="q3-right">工程師培養班（每週付出四十小時，從零培養到工程師，學費是一個月薪水）</div>
-						</div>
-						
-						<div class="q3">
-							<input class="q3-left answer" type="radio" name="chozenType" value="業餘班"/>
-							<div class="q3-right">業餘班（依照個人目標訂立學習計畫，學費一萬五千元）</div>
-						</div>
-						<div class="hidden req">這是必填問題！</div>
-					</div>
-
-					<!-- 第四題 -->
-					<div  class="question">
-						<div class="subtitle">是否有程式相關背景？<span class="req">*</span></div>
-						<div class="des">範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</div>
-						<input class="answer" type="text" placeholder="您的回答" />
-						<div class="hidden req">這是必填問題！</div>
-					</div>
-
-					<!-- 第五題 -->
-					<div  class="question">
-						<div class="subtitle">其他</div>
-						<div class="des">其他任何你想講的</div>
-						<input class="answer" type="text" placeholder="您的回答" value=""/>
-					</div>
-
-					<input id="submit" type="submit" value="提交" />
-					<div class="des">請勿利用 Google 表單送出密碼。</div>
-				</form>
-			</div>
-
-			<div  class="des footer">Google 並未認可或建立這項內容。 檢舉濫用情形 - 服務條款 - 其他條款</div>
-			<div class="footer">Google 表單</div>
-
-		</div>
+	<div class="container">
 		
-		<script src="main.js"></script>
+		<div class="row">
+
+			<form >
+				
+				<div class="col">
+					<h1>程式導師實驗計畫第二期報名表單</h1>
+					<p>詳情請參考：https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b
+					填完之後請務必按照文章內的說明再寄信給我，才算報名成功喔</p>
+					<p>*必填</p>
+				</div>	
+
+				<!-- 第一題 -->
+					
+					<div class="col">
+						<h4>電子郵件地址 </h4>
+						<input type="text" name="mail">
+						<div class="warning"></div>
+					</div>	
+				<!-- 第二題 -->
+					<div class="col">
+						<h4>暱稱*</h4>
+						<h5>該如何稱呼你 </h5>
+						<input type="text" name="nickname">
+					</div>
+
+				<!-- 第三題 -->
+					<div class="col">
+							<h4>報名類型*</h4>
+							<input type="radio" name="type" value="從零開始">從零到一基礎班（一個月後開始收保證金 		3000，淘汰不退還，結業後兩個月內找到工作付一個月半薪水，沒工作不用付）
+							<br>
+							<br>
+							<input type="radio" name="type" value="在職工程師">在職工程師加強班（一個月後開始收保證金 		3000，兩個月時收學費 30000，被淘汰不退還）
+					</div>	
+				<!-- 第四題 -->
+					<div class="col">	
+
+						<h4>現在的職業*</h4>
+						<h5>範例：學生、前端工程師、待業中、業務 </h5>
+						<input type="text" name="job">	
+					</div>
+				<!-- 第五題 -->
+					<div class="col">
+						<h4>是否有程式相關背景？ *</h4>
+						<h5>範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</h5>
+						<input type="text" name="experience">
+					</div>
+					
+				<!-- 第六題 -->
+					<div class="col">
+						<h4>其他</h4>
+						<h5>任何你想說的</h5>
+						<input type="text" name="others" >
+					</div>
+					
+					<div class="col">
+						<input id="submit" type="submit"  value="送出">
+					</div>
+			</form>
+		</div>
+		<p class="mark">This content is neither created nor endorsed by Google. Report Abuse - Terms of Service - Additional Terms</p>
+	</div>
+
+	<script src="main.js"></script>
 	
 </body>
 </html>
-
-

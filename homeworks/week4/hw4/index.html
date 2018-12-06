@@ -3,8 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>化繁為簡</title>
+	<style>
+	.test{
+
+	}
+		
+	</style>
+	}
 </head>
 <body>
+	 思考方向：要做一個函式裡面包含開關
+	 可以
 
 	<div class="test">
 		<p>1233</p>
@@ -14,21 +23,21 @@
 
 
 	<script type="text/javascript">
-		document.addEventListener('DOMContentLoaded',function(){
-			var test = document.querySelector('.test > p')
-			test.appendChild(document.createElement('span'))
-			// 第一個變成red
-			test.style.color ='red' 
+	 
+	 function q(selector){
 
+	 	const element = document.querySelector('.test')
+	 	
 
+	 	return{
+	 		hide:() => element.style.opacity = '0'
+	 		show:() => element.style.opacity ='100'
+	 	}
+	 }
 
-			// ex.
-			// var test = document.querySelectorAll('.test > p')
-			// test[0].style.color ='red'
-			// var span = document.createElement('span')
-			// span.innerText = 'span出現了'
-			// test.appendChild(span)
-		})
+	 const element = q('.title')
+	q('.title').hide()
+	 q('.title').show()
 	</script>
 	
 </body>

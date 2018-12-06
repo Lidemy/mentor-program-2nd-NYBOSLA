@@ -16,13 +16,13 @@ function stars(n) {
 	// 建立字串 
 	var num = ''
 	// 建立迴圈
-	for( var i=1 ; i<=n ; i++){
-		num+='*'
+	for( let i=1 ; i<=n ; i++){
+		num += '*'
+		newStar.push(num)
 	}
 
 	return newStar
 }
 
-
-
+// stars(10)
 module.exports = stars;
