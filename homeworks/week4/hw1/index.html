@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+    <style type="text/css" media="screen">
+    	.container{
+    		width: 500px;
+    		height: 550px;
+    		border-radius: 20px;
+    		background-color: #B4CBED;
+   			position: relative;
+   			left: 400px;
+   			top: 100px;
+
+
+    	}
+    	.result{
+    		width: 450px;
+    		height: 80px;
+    		border-radius: 20px;
+    		border: 5px solid #4788F0;
+    		background-color: white;
+    		top: 20px;
+    		position: absolute;
+    		left: 0;
+    		right: 0;
+    		margin: auto;
+    		text-align: right;
+    		font-size: 50px;
+
+    	}
+		.output{
+			width: 500px;
+			height: 300px;
+			top: 125px;
+			left: 20px;
+			position: absolute;
+
+    		
+
+
+    		}
+    	.btn{
+    		width: 100px;
+    		height: 70px;
+    		border-radius: 20px;
+    		background-color: #F8D046;
+    		display: inline-block;
+			line-height: 70px;  
+			text-align: center; /* 文字置中 */
+			margin: 5px;
+			font-size: 20px;
+
+
+    	}
+    	.equal{
+    		width: 450px;
+    		background-color: pink;
+    		/* border: 1px solid black; */
+    		height: 70px;
+    		margin-top: 10px;
+    	}
+    	.clear{
+    		background-color: white;
+    		display: inline-block;
+    		text-align: center;
+    	}
+    	.operator{
+    		background-color: #FE9800;
+    	}
+
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="result"></div>
+
+		<div class="output">
+				<div class="clear btn">AC</div>
+				<div class="num9 btn">9</div>
+				<div class="num8 btn">8</div>
+				<div class="num7 btn">7</div>
+				<div class="num6 btn">6</div>
+				<div class="num5 btn">5</div>
+				<div class="num4 btn">4</div>
+				<div class="num3 btn">3</div>
+				<div class="num2 btn">2</div>
+				<div class="num1 btn">1</div>
+				<div class="num0 btn">0</div>
+				<div class="operator btn plus">+</div>
+				<div class="operator btn">*</div>
+				<div class="operator btn minus">-</div>
+				<div class="operator btn ">/</div>
+				<div class="operator btn dot">.</div>
+				<div class="equal operator  btn calculator">=</div>		
+		</div>
+		
+		
+	</div>
+     <script>
+ 			
+ 			// 狀況 第一個數字沒有
+
+			let firstNumber = null
+			let secondNumber = null
+			let operator = null
+			// 點選數字
+				for (let i =0 ; i<=9 ; i++){
+					document.querySelector('.num' + i).addEventListener('click',() =>{
+					  clickNumber(i)
+					
+		    		})	
+				 
+				}		
+
+
+			 // 點選加法
+			 // 1.輸入第一個數字
+			 // 2.輸入第二的數字
+			// document.querySelector('.operator.plus').addEventListener('click',function(){
+			// 	clickNumber(i)
+
+			// })
+
+
+			// 按了加法之後
+			document.querySelector('.operator.plus').addEventListener('click',()=>{
+				handleOperator('+')
+			})
+			// 按了減法之後
+			document.querySelector('.operator.minus').addEventListener('click',()=>{
+				handleOperator('-')
+			})
+			// 按了等於之後
+			document.querySelector('.operator.calculator').addEventListener('click',()=>{
+				handleOperator('=')
+			})
+			// 按了AC
+
+			document.querySelector('.clear').addEventListener('click',()=>{
+				handleOperator('AC')
+			})
+
+			// 處理加法的function
+			function handleOperator(op){
+				if(op === '='){
+					secondNumber = Number(getResult())
+					// console.log(firstNumber, operator ,secondNumber)
+					if(operator === '+'){
+						setResult(firstNumber + secondNumber)
+				 	}else if(operator === '-'){
+				 		setResult(firstNumber - secondNumber)
+				 	}else if(operator === 'AC'){
+				 		setResult('')
+				 	}
+
+				}else{
+					 
+					firstNumber = Number(getResult())
+					// 清空結果
+					setResult('')
+					operator = op
+
+					} 
+					
+				}
+			
+
+			// 紀錄是輸入第幾個數字
+
+			function clickNumber(num){
+				
+					appendResult(num)
+				
+
+			}
+
+			function setResult(str){
+				
+				document.querySelector('.result').innerText = str
+		    	
+			}
+
+			function appendResult(str){
+				document.querySelector('.result').innerText +=str
+			}
+
+
+			function getResult(){
+				return document.querySelector('.result').innerText 
+			}
+
+
+     </script>
+</body>
+</html>

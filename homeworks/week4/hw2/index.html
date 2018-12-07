@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>程式導師實驗計畫第二期報名名單</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		
+		<div class="row">
+
+			<form >
+				
+				<div class="col">
+					<h1>程式導師實驗計畫第二期報名表單</h1>
+					<p>詳情請參考：https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b
+					填完之後請務必按照文章內的說明再寄信給我，才算報名成功喔</p>
+					<p>*必填</p>
+				</div>	
+				<!-- 第一題 -->
+					
+					<div class="col">
+						<h4>電子郵件地址 </h4>
+						<input type="text" name="mail">
+						<div class="warning"></div>
+					</div>	
+				<!-- 第二題 -->
+					<div class="col">
+						<h4>暱稱*</h4>
+						<h5>該如何稱呼你 </h5>
+						<input type="text" name="nickname">
+					</div>
+
+				<!-- 第三題 -->
+					<div class="col">
+							<h4>報名類型*</h4>
+							<input type="radio" name="type" value="從零開始">從零到一基礎班（一個月後開始收保證金 		3000，淘汰不退還，結業後兩個月內找到工作付一個月半薪水，沒工作不用付）
+							<br>
+							<br>
+							<input type="radio" name="type" value="在職工程師">在職工程師加強班（一個月後開始收保證金 		3000，兩個月時收學費 30000，被淘汰不退還）
+					</div>	
+				<!-- 第四題 -->
+					<div class="col">	
+
+						<h4>現在的職業*</h4>
+						<h5>範例：學生、前端工程師、待業中、業務 </h5>
+						<input type="text" name="job">	
+					</div>
+				<!-- 第五題 -->
+					<div class="col">
+						<h4>是否有程式相關背景？ *</h4>
+						<h5>範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</h5>
+						<input type="text" name="experience">
+					</div>
+					
+				<!-- 第六題 -->
+					<div class="col">
+						<h4>其他</h4>
+						<h5>任何你想說的</h5>
+						<input type="text" name="others" >
+					</div>
+					
+					<div class="col">
+						<input id="submit" type="submit"  value="送出">
+					</div>
+			</form>
+		</div>
+		<p class="mark">This content is neither created nor endorsed by Google. Report Abuse - Terms of Service - Additional Terms</p>
+	</div>
+
+	<script src="main.js"></script>
+	
+</body>
+</html>
