@@ -9,7 +9,6 @@ DOM是Document Object Model，
 而透過DOM，可以讓Javascript來操控DOM，改變或新增html的元素。
 
 
-
 2. 什麼是 Ajax？
 AJAX全稱為"Asynchronous JavaScript and XML"(非同步JavaScript和XML)，
 就是可以透過瀏覽器提供的api，不需要換頁就可以和server做溝通，
