@@ -9,8 +9,8 @@
     	.container{
     		width: 500px;
     		height: 550px;
-    		border: 1px solid black;
-    		background-color: red;
+    		border-radius: 20px;
+    		background-color: #B4CBED;
    			position: relative;
    			left: 400px;
    			top: 100px;
@@ -20,7 +20,8 @@
     	.result{
     		width: 450px;
     		height: 80px;
-    		border: 1px solid black;
+    		border-radius: 20px;
+    		border: 5px solid #4788F0;
     		background-color: white;
     		top: 20px;
     		position: absolute;
@@ -28,6 +29,7 @@
     		right: 0;
     		margin: auto;
     		text-align: right;
+    		font-size: 50px;
 
     	}
 		.output{
@@ -44,19 +46,20 @@
     	.btn{
     		width: 100px;
     		height: 70px;
-    		border: 1px solid black;
-    		background-color: yellow;
+    		border-radius: 20px;
+    		background-color: #F8D046;
     		display: inline-block;
 			line-height: 70px;  
 			text-align: center; /* 文字置中 */
 			margin: 5px;
+			font-size: 20px;
 
 
     	}
     	.equal{
-    		width: 500px;
+    		width: 450px;
     		background-color: pink;
-    		border: 1px solid black;
+    		/* border: 1px solid black; */
     		height: 70px;
     		margin-top: 10px;
     	}
@@ -64,6 +67,9 @@
     		background-color: white;
     		display: inline-block;
     		text-align: center;
+    	}
+    	.operator{
+    		background-color: #FE9800;
     	}
 
 
@@ -91,7 +97,7 @@
 				<div class="operator btn minus">-</div>
 				<div class="operator btn ">/</div>
 				<div class="operator btn dot">.</div>
-				<div class="operator btn calculator">=</div>		
+				<div class="equal operator  btn calculator">=</div>		
 		</div>
 		
 		

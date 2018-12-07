@@ -1,25 +1,21 @@
 function alphaSwap(str) {
 
-  var upstr = str.toUpperCase();
-  var lowstr = str.toLowerCase();
+  let result = '';
 
-  var output = '';
-  
-  for(var i = 0; i < str.length; i++) {
-  	if(upstr[i] === str[i]) {
-  	  output += lowstr[i];
-  	} else {
-  	  output += upstr[i];
-  	}
-  }
-  return output;
-
+  for(var i=0;i<str.length;i++){      
+    if(str.charCodeAt(i)>=65&&str.charCodeAt(i)<=90){          
+      result+=str[i].toLowerCase();       
+    }else if(str.charCodeAt(i)>=97&&str.charCodeAt(i)<=122){        
+      result+=str[i].toUpperCase();       
+    }else{          
+      result+=str[i];       
+    }      
+  }     
+  return result;  
 }
 
 
-
-
-
+// 想要的輸出結果
 // input: nick
 // output: NICK
 
@@ -28,7 +24,4 @@ function alphaSwap(str) {
 
 // input: ,hEllO122
 // output: ,HeLLo123
-
-
-
 module.exports = alphaSwap
