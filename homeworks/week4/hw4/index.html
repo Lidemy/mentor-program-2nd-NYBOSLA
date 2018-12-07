@@ -12,8 +12,9 @@
 	}
 </head>
 <body>
-	 思考方向：要做一個函式裡面包含開關
-	 可以
+	 <!-- 思考方向：要做一個函式裡面包含開關兩個功能 -->
+	 <!-- 呼叫一次函式就可以 -->
+	 
 
 	<div class="test">
 		<p>1233</p>
@@ -26,7 +27,7 @@
 	 
 	 function q(selector){
 
-	 	const element = document.querySelector('.test')
+	 	const element = document.querySelector(selector)
 	 	
 
 	 	return{
@@ -35,9 +36,16 @@
 	 	}
 	 }
 
-	 const element = q('.title')
-	q('.title').hide()
-	 q('.title').show()
+	 var element = {
+	 	hide: function(){
+
+	 	},
+	 	show: function(){
+
+	 	}
+
+	 }
+	
 	</script>
 	
 </body>
