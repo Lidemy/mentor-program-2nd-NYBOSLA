@@ -1,0 +1,23 @@
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: blue; }
+
+.container {
+  background: blue; }
+
+.navbar {
+  background: red; }
+
+ul {
+  text-align: center; }
+
+li {
+  display: inline-block;
+  width: 80px;
+  color: #F8EDE6;
+  font-size: 28px; }
+
+/*# sourceMappingURL=style.css.map */
