@@ -1,0 +1,17 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "this is my first time use postcss ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "cssnano": "^4.1.8",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0"
+  }
+}
