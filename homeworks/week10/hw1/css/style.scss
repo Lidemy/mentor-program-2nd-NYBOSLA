@@ -1,0 +1,75 @@
+$brand-color:#F6F6F6;
+$color_bg:#D3EFEB;
+$color_24px:#4788F0;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+h3,p{
+	font: 100% $font-stack;
+	color: $primary-color;
+}
+#logo{
+	float:right;
+}
+.box { 
+  @include border-radius(10px); 
+  background:$brand-color;
+}
+.container{
+	background: $brand-color;
+	text-align: center;
+	
+}
+.navbar{
+	background:$color_bg;
+	text-align: center;
+
+}
+ul{
+	display:inline-block;
+	margin:50px;
+	
+}
+li{
+	display:inline-block;	
+	color:$color_24px;
+	font-size: 24px;
+	
+}
+
+.wrap{
+	
+	
+	text-align: center;
+	display:inline-block;
+	margin:20px;
+	padding:20px;
+
+	
+	
+
+	.item{
+		display:inline-block;
+		text-align: center;
+		height: 280px;
+		width: 200px;
+		background:$color_bg;
+		border:1px solid black;
+		margin:20px;	
+	}
+	img{
+		width: 100%;
+	}
+
+
+}

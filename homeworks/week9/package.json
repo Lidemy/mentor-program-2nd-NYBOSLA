@@ -1,0 +1,14 @@
+{
+  "name": "gulp_test",
+  "version": "1.0.0",
+  "description": "this is a gulp testing for my homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.0"
+  }
+}
